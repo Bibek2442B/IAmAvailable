@@ -1,12 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import MyInput from "./components/MyInput";
+import {useFonts} from "expo-font";
+// import AppLoading from "expo-app-loading";
+import Welcome from "./pages/Welcome";
+import Register from "./pages/Register";
 
 export default function App() {
+  const [fontsLoaded] = useFonts({
+    'Lobster': require('./assets/fonts/Lobster-Regular.ttf'),
+    'Arima': require('./assets/fonts/Arima-Bold.ttf'),
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+      <Register/>
   );
 }
 
