@@ -1,16 +1,19 @@
 import * as React from "react"
 import Svg, { G, Path, Defs } from "react-native-svg"
-/* SVGR has dropped some elements not supported by react-native-svg: filter */
+import {Dimensions} from "react-native";
+
+const {width, height} = Dimensions.get("window");
+const scaleSize=(size)=> (width/375)*size;
 
 function SvgComponent(props) {
   return (
     <Svg
-      width={255}
-      height={212}
+      width={scaleSize(200)}
+      height={scaleSize(167)}
       viewBox="0 0 255 212"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{position: 'fixed', top: 0, left: -1, zIndex: -1}}
+      style={{position: 'fixed', top: -1, left: -1, zIndex: 1000}}
       {...props}
     >
       <G filter="url(#filter0_d_66_134)">

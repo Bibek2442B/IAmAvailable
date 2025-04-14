@@ -5,6 +5,7 @@ import {useFonts} from "expo-font";
 // import AppLoading from "expo-app-loading";
 import Welcome from "./pages/Welcome";
 import Register from "./pages/Register";
+import Login from "./pages/Login";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
