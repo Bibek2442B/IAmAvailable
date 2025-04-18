@@ -1,10 +1,7 @@
 import {StyleSheet, Text, TextInput} from "react-native";
 import {useState} from "react";
 import {LinearGradient} from "expo-linear-gradient";
-import {Dimensions} from "react-native";
 
-const {width, height} = Dimensions.get("window");
-const scaleSize=(size)=> (width/375)*size;
 
 const styles= StyleSheet.create({
   input:{
@@ -18,17 +15,17 @@ const styles= StyleSheet.create({
     top: 13,
     left: 20,
     fontFamily: 'Arima',
-    fontSize:scaleSize(18),
+    fontSize:18,
     color: '#ffffff',
 
   },
   cursor:{
-    paddingLeft: scaleSize(20),
+    paddingLeft: 20,
     height: '100%',
     width: '100%',
     borderRadius:15,
     fontFamily: 'Arima',
-    fontSize:scaleSize(16),
+    fontSize:16,
   }
 });
 

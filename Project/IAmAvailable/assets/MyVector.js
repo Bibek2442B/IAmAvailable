@@ -3,7 +3,8 @@ import Svg, { G, Path, Defs } from "react-native-svg"
 import {Dimensions} from "react-native";
 
 const {width, height} = Dimensions.get("window");
-const scaleSize=(size)=> (width/375)*size;
+const refSize=width<height?width: height;
+const scaleSize=(size)=> (refSize/375)*size;
 
 function SvgComponent(props) {
   return (
@@ -13,7 +14,7 @@ function SvgComponent(props) {
       viewBox="0 0 255 212"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
-      style={{position: 'fixed', top: -1, left: -1, zIndex: 1000}}
+      style={{position: 'absolute', top: -1, left: -1, zIndex: -1}}
       {...props}
     >
       <G filter="url(#filter0_d_66_134)">
