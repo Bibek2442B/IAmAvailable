@@ -1,11 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import MyInput from "./components/MyInput";
 import {useFonts} from "expo-font";
-// import AppLoading from "expo-app-loading";
 import Welcome from "./pages/Welcome";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
+import MarkAvailability from "./pages/Mark Availability";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -18,7 +16,11 @@ export default function App() {
   }
 
   return (
-      <Login/>
+      <>
+        <Register/>
+
+      </>
+
   );
 }
 

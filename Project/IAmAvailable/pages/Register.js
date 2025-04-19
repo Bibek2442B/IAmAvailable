@@ -3,6 +3,8 @@ import MyVector from "../assets/MyVector";
 import MyImagePlaceholder from "../components/MyImagePlaceholder";
 import MyInput from "../components/MyInput";
 import MyButton from "../components/MyButton";
+// import * as FileSystem from 'expo-file-system'
+
 
 const Register = () => {
   const styles = StyleSheet.create({

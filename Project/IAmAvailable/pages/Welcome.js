@@ -5,6 +5,12 @@ import MyButton from "../components/MyButton";
 
 
 const Welcome =()=>{
+  const LoginButton=()=> {
+    alert('This goes to Login page');
+  }
+  const RegisterButton=()=> {
+    alert('This goes to Register page');
+  }
   return (
     <>
       <LinearGradient
@@ -23,8 +29,8 @@ const Welcome =()=>{
         </View>
         <View style={styles.buttonView}>
           <Text style={[styles.clickText, styles.bottomMargin]}>Click to get Started...</Text>
-          <MyButton title="Login" size="large" color="#28B828" style={[styles.bottomMargin, styles.button]}/>
-          <MyButton title="Register" size="large" color="#28B828" style={[styles.bottomMargin, styles.button]}/>
+          <MyButton title="Login" onPress={LoginButton} size="large" color="#28B828" style={[styles.bottomMargin, styles.button]}/>
+          <MyButton title="Register" onPress={RegisterButton} size="large" color="#28B828" style={[styles.bottomMargin, styles.button]}/>
         </View>
       </LinearGradient>
       <StatusBar style="auto"/>

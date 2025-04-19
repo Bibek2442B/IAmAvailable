@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
         fontFamily:"Lobster",
         fontSize: 30,
         marginBottom: 10,
-        marginTop:'30%',
     },
 
 });
@@ -27,7 +26,7 @@ const Login=(props)=>{
 
     return (
         <>
-            <ScrollView style={styles.container} contentContainerStyle={{flexGrow:1, alignItems: "center"}}>
+            <ScrollView style={styles.container} contentContainerStyle={{flexGrow:1,justifyContent:'center', alignItems: "center"}}>
                 <MyVector/>
                 <Text style={styles.titleText}>Login</Text>
                 <MyInput placeholder="Username" style={styles.textAreaMargin} />
