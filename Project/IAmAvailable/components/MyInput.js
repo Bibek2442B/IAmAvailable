@@ -29,8 +29,9 @@ const styles= StyleSheet.create({
   }
 });
 
+
 const MyInput= (props) => {
-  const [text, setText] = useState("");
+  // const [text, setText] = useState("");
   return (
     <LinearGradient
       style={[props.style,styles.input]}
@@ -39,14 +40,15 @@ const MyInput= (props) => {
       start={{x:0,y:0}}
       end={{x:1,y:0}}
     >
-      {text===''&&<Text style={styles.placeholder}>{props.placeholder}</Text>}
+      {!props.value&&<Text style={styles.placeholder}>{props.placeholder}</Text>}
       <TextInput
         style={styles.cursor}
-        onChangeText={(text) => setText(text)}
-        value={text}
+        onChangeText={props.onChangeText}
+        value={props.value}
       />
     </LinearGradient>
   );
 }
+
 
 export default MyInput;

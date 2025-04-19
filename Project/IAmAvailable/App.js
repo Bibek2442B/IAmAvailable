@@ -4,6 +4,7 @@ import Welcome from "./pages/Welcome";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import MarkAvailability from "./pages/Mark Availability";
+import SearchGroup from "./pages/Search Groups";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -17,7 +18,7 @@ export default function App() {
 
   return (
       <>
-        <Register/>
+        <MarkAvailability/>
 
       </>
 
