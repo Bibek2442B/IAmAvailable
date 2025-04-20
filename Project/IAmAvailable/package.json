@@ -22,7 +22,9 @@
     "react-native-web": "~0.19.13",
     "expo-file-system": "~18.0.12",
     "@expo/vector-icons": "^14.0.2",
-    "@react-native-community/datetimepicker": "8.2.0"
+    "@react-native-community/datetimepicker": "8.2.0",
+    "react-native-maps": "1.18.0",
+    "expo-dev-client": "~5.0.20"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

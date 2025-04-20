@@ -5,6 +5,7 @@ import {StatusBar} from "expo-status-bar";
 import {useState} from "react";
 import {Entypo} from "@expo/vector-icons";
 import DateTimePicker from '@react-native-community/datetimepicker'
+import MapView, { Marker } from 'react-native-maps';
 
 const styles = StyleSheet.create({
   container: {
@@ -196,6 +197,21 @@ export default function MarkAvailability(props) {
             style={styles.margin}
           />
         </View>
+        {/*<MapView*/}
+        {/*  style={{width: '100%', height: 100}}*/}
+        {/*  initialRegion={{*/}
+        {/*    latitude: 41.79664,*/}
+        {/*    longitude: -6.765391,*/}
+        {/*    latitudeDelta: 0.0922,*/}
+        {/*    longitudeDelta: 0.0421,*/}
+        {/*  }}*/}
+        {/*>*/}
+        {/*  <Marker*/}
+        {/*    coordinate={{ latitude: 41.79664, longitude: -6.765391 }}*/}
+        {/*    title="My Marker"*/}
+        {/*    description="Some description"*/}
+        {/*  />*/}
+        {/*</MapView>*/}
 
 
       </ScrollView>
